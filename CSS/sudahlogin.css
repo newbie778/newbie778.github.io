@@ -1,0 +1,146 @@
+body{
+    background-color: #6D2424;
+    background-size: cover;
+    margin: 0;
+}
+header{
+    display: flex;
+    gap: 50px;
+    background-color: #451414;
+    padding: 20px 15px 15px 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.isi{
+    display: grid;
+}
+.logo{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 25px;
+    height: 52px;
+    display: flex;
+    box-shadow: black 3px 3px 3px;
+}
+.logo::after{
+    content: "Roti Bakar Jaya";
+    font-size: 20px;
+    color: black;
+    margin-top: 12px;
+}
+.bakar{
+    margin-top: 12px;
+    display :flex;
+    column-gap: 50px;
+    text-shadow: 5px 5px 4px #000000;
+}
+#login{
+    margin-left: 68vw;
+}
+.backgroundroti{
+    display: flex;
+    column-gap: 15px;
+    background-color: #795723;
+}
+.teks{
+    display: grid;
+    font-size: 30px;
+    color: white;
+    gap: 1px;
+    text-shadow: 5px 5px 4px #000000;
+    
+
+}
+.citarasa{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    text-shadow: 5px 5px 4px #000000;
+}
+input{
+    border-radius: 50px;
+    width: 35vw;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.271)
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.search-box{
+    width: 600px;
+    background-color: #fff;
+    margin: 200px auto 0;
+    border-radius: 20px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+input {
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+}
+button .bx{
+    width: 25px;
+    color: #555;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+::placeholder {
+    color: #555;
+}
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    
+    
+}
+.result-box ul li:hover{
+    background: #e9f3ff ;
+}
+.bakar .mn:hover{
+ opacity: 70%;
+}
+.bakar .ktk:hover{
+    opacity: 70%;
+}
+.teks p{
+ font-size: 45px;
+
+}
+.citarasa p{
+    font-size: 6vh;
+    text-shadow: 10px 10px 10px 10px #000000;
+}

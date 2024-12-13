@@ -1,0 +1,112 @@
+body{
+    background-color: #6D2424;
+    background-size: cover;
+    margin: 0;
+}
+header{
+    display: flex;
+    gap: 80px;
+    background-color: #451414;
+    padding: 15px 10px 10px 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.logo{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 60px;
+    padding: 5px 5px 5px 9px;
+    height: 52px;
+    display: flex;
+    box-shadow: black 3px 3px 3px 2px;
+}
+.logo::after{
+    content: "Roti Bakar Jaya";
+    font-size: 20px;
+    color: black;
+    margin-top: 12px;
+}
+.bakar{
+    margin-top: 14px;
+    display :flex;
+    column-gap: 50px;
+}
+#login{
+    margin-left: 1370px;
+}
+.backgroundroti{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 1vw;
+    padding-left: 25px;
+}
+#cklt{
+    border-radius: 10px;
+    box-shadow:black 3px 3px 3px;
+}
+#A{
+    font-size: 20px;
+    margin-top: 11px;
+}
+.alamat{
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 15px;
+    color: white;
+    background-color: #424141;
+    box-shadow: black 2px 2px 2px;
+    border-radius: 17px;
+    width: 400px;
+}
+#TUNAI{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    display: flex;
+    padding: 10px;
+    background-color: #424141;
+    border-radius: 17px;
+    width: 405px;
+    height: 15px;
+    box-shadow:black 2px 2px 2px;
+}
+button{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+    background-color: #cf943d;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow:black 2px 2px 2px;
+}
+button:hover{
+    background-color: #a9762b;
+}
+#btn{
+    padding-left: 25px;
+}
+.M{
+    color: white;
+    padding-left: 40px;
+    font-size: 18px;
+}
+#pb {
+    background-color: #424141;
+    width: 425px;
+    height: 35px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 17px;
+    box-shadow: black 2px 2px 2px;
+    outline: none;
+}

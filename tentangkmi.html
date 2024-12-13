@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tentang kami</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="aka.png" type="image/x-icon" />
+    <link rel="icon" href="aka.png" type="image/x-icon" />
+    <style>
+      body {
+        background-color: #6d2424;
+        background-size: cover;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      ol {
+        font-size: 30px;
+        color: white;
+        margin-top: 8vw;
+      }
+      button {
+        border: none;
+        border-radius: 50px;
+        color: white;
+        background-color: #cf943d;
+        padding: 10px;
+        width: 180px;
+        font-size: 18px;
+        box-shadow: black 3px 3px 3px;
+      }
+      button:hover {
+        background-color: #a9762b;
+      }
+      a {
+        padding-left: 45px;
+      }
+      #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 100%;
+        border-top: 16px solid #795723;
+        -webkit-animation: spin 1.2s linear infinite;
+        animation: spin 1.2s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #myDiv {
+        display: none;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <h1>TUGAS MENGIMPLEMENTASIKAN FIGMA KE VSCODE</h1>
+      <ol type="1">
+        <li>Dimas Zaky Ibrahim (8)</li>
+        <br />
+        <li>Hegar Agung Nugroho (12)</li>
+        <br />
+        <li>Muhammad Rayhan Kurniawan (26)</li>
+        <br />
+        <li>Ozoran Argyan Harfia (32)</li>
+      </ol>
+      <br />
+      <a href="kontak.html"><button>KEMBALI</button></a>
+    </div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1800);
+      }
+
+      function showPage() {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('myDiv').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

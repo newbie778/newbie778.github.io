@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <link rel="stylesheet" href="CSS/kontak.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="aka.png" type="image/x-icon" />
+    <link rel="icon" href="aka.png" type="image/x-icon" />
+    <style>
+      #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 100%;
+        border-top: 16px solid #795723;
+        -webkit-animation: spin 1.2s linear infinite;
+        animation: spin 1.2s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+      }
+
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #myDiv {
+        display: none;
+      }
+    </style>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+    <div class="container">
+      <div class="contact-box">
+        <div class="left">
+          <p id="kami">
+            <b><i>Kontak Kami</i></b>
+          </p>
+          <p id="S">
+            <b
+              ><i>
+                Silahkan tinggalkan pesan untuk kami pada kolom yang tersedia
+              </i></b
+            >
+          </p>
+          <a id="a" href="tentangkmi.html"
+            ><button id="ton">Tentang Kami</button></a
+          >
+          <a id="K" href="sudahlogin.html"><button id="M">KEMBALI</button></a>
+        </div>
+        <div class="right">
+          <h2><b>Hubungi Kami</b></h2>
+          <input type="text" class="field" placeholder="Nama Kamu" autocomplete="off" required />
+          <input type="email" class="field" placeholder="Email Kamu" autocomplete="off" required />
+          <input type="number" class="field" placeholder="Nomor Telepon" autocomplete="off" required />
+          <textarea class="field area" placeholder="Pesan"></textarea>
+          <a href="ucapankntk.html"><button class="btn">Kirim</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1800);
+      }
+
+      function showPage() {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('myDiv').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

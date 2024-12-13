@@ -1,0 +1,115 @@
+body{
+    background-color: #6D2424;
+    background-size: cover;
+    margin: 0;
+}
+header{
+    display: flex;
+    gap: 50px;
+    background-color: #451414;
+    padding: 20px 15px 15px 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.isi{
+    display: grid;
+}
+.logo{
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: black 3px 3px 3px;
+}
+.logo::after{
+    content: "Roti Bakar Jaya";
+    font-size: 20px;
+    color: black;
+    margin-top: 13px;
+}
+.bakar{
+    margin-top: 12px;
+    display :flex;
+    column-gap: 50px;
+}
+#login{
+    margin-left: 73vw;
+}
+.backgroundroti{
+    display: flex;
+    column-gap: 15px;
+    background-color: #795723;
+}
+.menu{
+    padding-left: 20px;
+
+}
+img{
+    border-radius: 10px;
+}
+.roticoklat{
+    padding: 25px;
+    display: flex;
+}
+#roti{
+    font-size: 30px;
+    padding-left: 20px;
+    color: white;
+}
+#selai{
+    font-size: 30px;
+    padding-left: 20px;
+    color: white;
+}
+#maca{
+    font-size: 30px;
+    padding-left: 20px;
+    color: white;
+}
+.rotiselai{
+    padding: 25px;
+    display: flex;
+}
+.rotimatca{
+    padding: 25px;
+    display: flex;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 13px;
+    width: 175px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #cf943d;
+    position: relative;
+    box-shadow: black 3px 3px 3px;
+}
+button:hover{
+    background: #a9762b;
+}
+#kembali{
+    margin: 35px;
+}
+#C{
+    border-radius: 10px;
+    box-shadow: black 2px 2px 2px;
+}
+#S{
+    border-radius: 10px;
+    box-shadow: black 2px 2px 2px;
+}
+#R{
+    border-radius: 10px;
+    box-shadow: black 2px 2px 2px;
+}
+.bakar:hover{
+    opacity: 70%;
+}

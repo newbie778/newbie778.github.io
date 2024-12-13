@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>landing page</title>
+    <link rel="stylesheet" href="CSS/landingpage.css" />
+    <link rel="shortcut icon" href="aka.png" type="image/x-icon">
+    <link rel="icon" href="aka.png" type="image/x-icon">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <header>
+    <div class="logo">
+      <a href="#"><img src="aka.png" height="50px" width="75px"></a>
+    </div>
+    <div class="bakar">
+      <a class="mn" href="Menu.html">MENU</a>
+      <a class="ktk" href="kontak.html">KONTAK</a>  
+      <a id="login" href="log_in.html">LOGIN</a>
+    </div>
+  </header>
+    <div class="backgroundroti">
+      <img src="roti bakar cklt.jpg" width="375" height="272">
+      <div class="teks">
+        <h3><i>PROMO!!!</i></h3>
+        <p><i><b>Roti bakar original coklat susu hanya dengan<br> Rp.10.000,00 saja, promo terbatas hanya dalam  10-17<br> September 2024</b></i></p>
+      </div>
+    </div>
+    <div class="citarasa">
+      <h1><i>CITA RASA TERBAIK!</i></h1>
+      <p>Roti bakar dengan rasa yang belum pernah ada, dibuat<br> khusus untuk pecinta roti bakar.</p>
+    </div>
+
+    <div class="search-box">
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Apa yang ingin kamu pesan?" autocomplete="off">
+        <button><i class='bx bx-search'></i></button>
+
+      </div>
+      <div class="result-box">
+      </div>
+    </div>
+
+</div>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<script src="landingpage.js"></script>
+
+</body>
+</html>

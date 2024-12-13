@@ -1,0 +1,21 @@
+img {
+    align-items: center;
+    margin-left: 700px;
+}
+button{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+    background-color: #cf943d;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow:black 2px 2px 2px;
+}
+body {
+    background-color: #6D2424;
+}
